@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=S, initial-scale=1.0">
+  <title>Summer Sale</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- Banner section  -->
+      <div class="hero min-h-screen bg-[#F9F6E2;]">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="./images/Summer 1.png" class="w-[600px] rounded-lg " />
+          <div class="text-center whitespace-break-spaces">
+            <h4 class="text-3xl">---SALE FEVER---</h4>
+            <h1 class="text-6xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span>
+            </h1>
+            <p class="text-2xl font-semibold">Use Promo Code <span
+                class="bg-[#E527B2] px-6 py-2 rounded-lg text-white font">SELL200</span></p>
+          </div>
+        </div>
+      </div>
+  </header>
+              <!-- card section -->
+  <section class="row-container max-w-screen-xl mx-auto my-12 lg:flex  ">
+    <div class="left-side-container w-3/4">
+
+        <h1 class="font-semibold text-4xl mt-5">Kitchenware</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+    
+          <!-- Kitchenware card section -->
+          <!-- card 1 -->
+            <div id="card-one" class="card w-72 bg-base-100 shadow-xl" onclick="clickForPurchase(this)">
+            <figure class="px-10 pt-10">
+              <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div id="product-one-details" class="card-body items-center text-center">
+              <div class="text-[#FFC107]">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h2 class="card-title">K. Accessories</h2>
+              <p id="paragraph-one" class="text-slate-500 font-medium"> <span class="product-one">39.00</span> TK</p>
+            </div>
+            </div>
+          <!-- card 2 -->
+            <div id="card-two" class="card w-72 bg-base-100 shadow-xl" onclick="clickForPurchase(this)">
+              <figure class="px-10 pt-10">
+                <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="text-[#FFC107]">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h2 class="card-title">K. Accessories</h2>
+                <p class="text-slate-500 font-medium"> <span>25.00</span> TK</p>
+              </div>
+            </div>
+          <!-- card 3 -->
+            <div class="card w-72 bg-base-100 shadow-xl" onclick="clickForPurchase(this)">
+              <figure class="px-10 pt-10">
+                <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="text-[#FFC107]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h2 class="card-title">Home Cooker</h2>
+                <p class="text-slate-500 font-medium"> <span>49.00</span> TK</p>
+              </div>
+            </div>
+            
+        </div>
+        <h1 class="font-semibold text-4xl mt-5">Sportswear</h1>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- sportswear card section -->
+          <!-- card 4 -->
+          <div class="card w-72 bg-base-100 shadow-xl" onclick="clickForPurchase(this)">
+            <figure class="px-10 pt-10">
+              <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <div class="text-[#FFC107]">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h2 class="card-title">Sports Back Cap</h2>
+              <p class="text-slate-500 font-medium"> <span>49.00</span> TK</p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="card w-72 bg-base-100 shadow-xl" onclick="clickForPurchase(this)">
+            <figure class="px-10 pt-10">
+              <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <div class="text-[#FFC107]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h2 class="card-title">Full Jersey Set</h2>
+              <p class="text-slate-500 font-medium"> <span>69.00</span> TK</p>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="card w-72 bg-base-100 shadow-xl" onclick="clickForPurchase(this)">
+            <figure class="px-10 pt-10">
+              <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <div class="text-[#FFC107]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h2 class="card-title">Sports cates</h2>
+              <p class="text-slate-500 font-medium"> <span>159.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- calculation card -->
+    <div class="right-side-container w-1/4">
+
+      <div class="w-96 bg-base-100 shadow-xl px-10 py-8">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text text-3xl font-bold">Have coupon?</span>
+          </label>
+          <label class="input-group">
+            <input type="text"  placeholder="Coupon code" id="coupon-code" class="input input-bordered" />
+            <button disabled id="apply-btn" class="btn bg-[#E527B2] text-white" onclick="couponApply()">Apply</button>
+          </label>
+        </div>
+        <div class="my-8">
+          <div>
+            <ol class="select-items list-decimal" id="select-items">
+                 <!-- ol list add here by javascript -->
+            </ol>
+           
+          </div>
+          <br>
+          <hr>
+          <br>
+          <h1>Total Price: <span id="total">00 </span> TK</h1>
+          <h1>Discount: <span id="discount">00 </span> TK</h1>
+          <h1>Total: <span id="totalAfterDiscount">00 </span> TK</h1>
+          <br>
+          <hr>
+          <div class="text-center">
+                           <!-- modal part  -->
+            <button id="total-price" disabled class="btn btn-wide bg-[#E527B2] text-white my-8" onclick="my_modal_1.showModal()">Make Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box mx-auto bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10  flex justify-center items-center ">
+                  <img src="./images/congo.png" alt="Shoes" class="rounded-xl text-center" />
+                </figure>
+                <h3 class="font-bold text-3xl">Congratulations</h3>
+                <p class="py-4 text-2xl">Your Purchase the product</p>
+                <div class="modal-action mr-20">
+                  <button class="btn bg-[#E527B2] text-center text-white mr-24 " onclick="goHome()">Go Home</button>
+                </div>
+              </form>
+            </dialog>
+  
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </section>>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
